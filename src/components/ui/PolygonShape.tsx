@@ -13,6 +13,9 @@ const ShapeContainer = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTM
 		/>
 	),
 );
+
+ShapeContainer.displayName = "";
+
 const ShapeContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
 	({ className, ...props }, ref) => (
 		<div
@@ -29,5 +32,7 @@ const ShapeContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLD
 		/>
 	),
 );
+
+ShapeContent.displayName = "";
 
 export { ShapeContainer, ShapeContent };
