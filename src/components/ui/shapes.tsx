@@ -21,7 +21,7 @@ const ShapeContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLD
 		<div
 			ref={ref}
 			className={cn(
-				" aspect-[1155/678] max-sm:w-[15.125rem] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] relative ",
+				" aspect-[1155/678] max-sm:w-[15.125rem] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] relative -z-10",
 				className,
 			)}
 			{...props}

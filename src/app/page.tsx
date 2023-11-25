@@ -11,7 +11,7 @@ export default function Home() {
 			amount={initState.amount}
 			__isSignin={initState.__isSignin}>
 			<div>
-				<div className="ml-10 mt-10">
+				<div className="flex justify-end mr-10 mt-10">
 					<ModeToggle></ModeToggle>
 				</div>
 				<div className="p-3">
@@ -19,7 +19,13 @@ export default function Home() {
 						<CardHeader>
 							<CardTitle className="pb-5">Counter</CardTitle>
 						</CardHeader>
-						<Counter>{(num: number) => <>current-count: {num}</>}</Counter>
+						<Counter>
+							{(num: number) => (
+								<>
+									count: <span className="ml-4">{num}</span>
+								</>
+							)}
+						</Counter>
 					</Card>
 				</div>
 			</div>

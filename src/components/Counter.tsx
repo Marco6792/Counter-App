@@ -19,20 +19,22 @@ const Counter = ({ children }: ChildrenType) => {
 
 	return (
 		<div>
-			<ShapeContainer className="absolute left-3 md:ml-10">
-				<ShapeContent className="dark:from-blue-400 -top-28 ml-10 max-sm:w-[20.125rem] "></ShapeContent>
+			<ShapeContainer className="absolute left-3 md:ml-10 top-0 -z-40">
+				<ShapeContent className="dark:from-blue-400 top-[1rem] ml-10 max-sm:w-[17.125rem] "></ShapeContent>
 			</ShapeContainer>
-			<h1 className="ml-10 shadow-sm py-3 text-card-foreground rounded-xl text-center">
+			<h1 className="ml-10 shadow-sm py-3 pb-4 border text-card-foreground rounded-xl text-center">
 				{children(count)}
 			</h1>
 			<Input
 				placeholder="Enter a number"
 				onChange={handleChangeInput}
-				className="focus-visible:ring-0 mt-4"
+				className="focus-visible:ring-0 mt-4 z-50 ml-4"
 			/>
-			<div className="flex space-x-10 mt-5">
-				<Button onClick={increment}>increment</Button>
-				<Button onClick={decrement} variant={"outline"}>
+			<div className="flex space-x-10 mt-8 justify-center items-center">
+				<Button onClick={increment} size="lg">
+					increment
+				</Button>
+				<Button onClick={decrement} variant={"outline"} size="lg">
 					decrement
 				</Button>
 			</div>
