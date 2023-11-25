@@ -1,9 +1,9 @@
 "use client";
 import { useCounter, useCounterAmount, useIsSignIn } from "@/context/CounterContext";
 import { ReactNode } from "react";
-import { ShapeContainer, ShapeContent } from "./ui/PolygonShape";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
+import { ShapeContainer, ShapeContent } from "./ui/shapes";
 
 type ChildrenType = {
 	children: (num: number) => ReactNode;
