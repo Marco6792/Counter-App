@@ -25,7 +25,7 @@ const Counter = ({ children }: ChildrenType) => {
 			<Input
 				placeholder="Enter a number"
 				onChange={handleChangeInput}
-				className="focus-visible:ring-0 mt-4 z-50 ml-4 py-4"
+				className="focus-visible:ring-0 mt-4 z-50 ml-4 py-4 h-12"
 			/>
 			<div className="flex space-x-10 mt-8 justify-center items-center">
 				<Button onClick={increment} size="lg">
