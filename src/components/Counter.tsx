@@ -1,7 +1,7 @@
 "use client";
 import { useCounter, useCounterAmount, useIsSignIn } from "@/context/CounterContext";
 import { ReactNode } from "react";
-import { ShapeContainer, ShapeContent } from "./ui/PolygonShape";
+import { ShapeContainer, ShapeContent } from "./PolygonShape";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 
