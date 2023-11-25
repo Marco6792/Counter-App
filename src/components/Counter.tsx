@@ -1,5 +1,5 @@
 "use client";
-import { useCounter, useCounterAmount, useIsSignIn } from "@/context/CounterContext";
+import { useCounter, useCounterAmount } from "@/context/CounterContext";
 import { ReactNode } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
@@ -11,11 +11,8 @@ type ChildrenType = {
 
 const Counter = ({ children }: ChildrenType) => {
 	const { count, increment, decrement } = useCounter();
-	const { __isSignin } = useIsSignIn();
 
-	console.log({ __isSignin });
-
-	const { amount, handleChangeInput } = useCounterAmount();
+	const { handleChangeInput } = useCounterAmount();
 
 	return (
 		<div>
@@ -28,7 +25,7 @@ const Counter = ({ children }: ChildrenType) => {
 			<Input
 				placeholder="Enter a number"
 				onChange={handleChangeInput}
-				className="focus-visible:ring-0 mt-4 z-50 ml-4"
+				className="focus-visible:ring-0 mt-4 z-50 ml-4 py-4"
 			/>
 			<div className="flex space-x-10 mt-8 justify-center items-center">
 				<Button onClick={increment} size="lg">
