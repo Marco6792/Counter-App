@@ -5,14 +5,14 @@ import { Label } from "@radix-ui/react-dropdown-menu";
 
 export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 	label?: string;
-	icon?: React.ReactElement;
+	Icon?: React.ReactElement;
 }
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
-	({ className, type, label, icon, ...props }, ref) => {
+	({ className, type, label, Icon, ...props }, ref) => {
 		return (
 			<div>
-				{!!label && <Label></Label>}
+				{!!label && <Label>{label}</Label>}
 				<input
 					type={type}
 					className={cn(

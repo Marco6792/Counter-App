@@ -1,6 +1,7 @@
 "use client";
 import { useCounter, useCounterAmount, useIsSignIn } from "@/context/CounterContext";
 import { ReactNode } from "react";
+import { ShapeContainer, ShapeContent } from "./ui/PolygonShape";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 
@@ -17,7 +18,10 @@ const Counter = ({ children }: ChildrenType) => {
 	const { amount, handleChangeInput } = useCounterAmount();
 
 	return (
-		<div className="relative">
+		<div>
+			<ShapeContainer className="absolute left-3 md:ml-10">
+				<ShapeContent className="dark:from-blue-400 -top-28 ml-10 max-sm:w-[20.125rem] "></ShapeContent>
+			</ShapeContainer>
 			<h1 className="ml-10 shadow-sm py-3 text-card-foreground rounded-xl text-center">
 				{children(count)}
 			</h1>
