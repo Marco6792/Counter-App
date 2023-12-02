@@ -1,4 +1,5 @@
 import { ThemeProvider } from "@/components/theme-provider";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					defaultTheme="dark"
 					enableSystem
 					disableTransitionOnChange>
+					<Analytics />
 					{children}
 				</ThemeProvider>
 			</body>

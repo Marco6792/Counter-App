@@ -11,3 +11,6 @@
           />
         </div>
       </div>
+
+
+      npm i -g shadcn-ui@latest alert avatar badge button card checkbox calender form  input label  navigation-menu skeleton tabs table toast textarea toggle seperator scroll-area switch sheet dialog dropdown-menu  aspect-ratio
